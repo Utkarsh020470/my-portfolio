@@ -18,6 +18,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: undefined,
+        format: 'es',
       },
     },
   },
@@ -25,5 +26,10 @@ export default defineConfig({
     headers: {
       'Content-Type': 'application/javascript',
     },
+  },
+  esbuild: {
+    loader: 'jsx',
+    include: /src\/.*\.jsx?$/,
+    exclude: [],
   },
 });
