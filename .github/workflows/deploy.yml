@@ -41,6 +41,7 @@ jobs:
         run: |
           npm run build
           find dist -type f -name "*.jsx" -exec sh -c 'mv "$1" "${1%.jsx}.js"' sh {} \;
+          find dist -type f -name "*.js" -exec sh -c 'echo "Content-Type: application/javascript" > "$1.headers"' sh {} \;
         env:
           NODE_ENV: production
       - name: Setup Pages
