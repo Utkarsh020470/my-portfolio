@@ -1,0 +1,28 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Define the circular clip path -->
+  <defs>
+    <clipPath id="circle-clip">
+      <circle cx="50" cy="50" r="48"/>
+    </clipPath>
+    <!-- Define the border gradient -->
+    <linearGradient id="border-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Border circle with gradient -->
+  <circle cx="50" cy="50" r="50" fill="url(#border-gradient)"/>
+  
+  <!-- Clipped image -->
+  <g clip-path="url(#circle-clip)">
+    <image 
+      xlink:href="profile_browser_dp.jpg"
+      x="0" 
+      y="0" 
+      width="100" 
+      height="100"
+      preserveAspectRatio="xMidYMid slice"
+    />
+  </g>
+</svg> 
