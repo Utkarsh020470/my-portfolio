@@ -38,7 +38,9 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
+          find dist -type f -name "*.jsx" -exec sh -c 'mv "$1" "${1%.jsx}.js"' sh {} \;
         env:
           NODE_ENV: production
       - name: Setup Pages
