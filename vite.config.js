@@ -12,6 +12,15 @@ export default defineConfig({
     },
     extensions: ['.js', '.jsx', '.json'],
   },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
   server: {
     headers: {
       'Content-Type': 'application/javascript',
