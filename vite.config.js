@@ -4,17 +4,7 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react({
-      jsxRuntime: 'automatic',
-      jsxImportSource: 'react',
-      babel: {
-        plugins: [
-          ['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }],
-        ],
-      },
-    }),
-  ],
+  plugins: [react()],
   base: '/my-portfolio/',
   resolve: {
     alias: {
