@@ -13,8 +13,8 @@ export function ThemeProvider({ children }) {
     if (savedTheme) {
       return savedTheme;
     }
-    // If no saved theme, default to 'system'
-    return 'system';
+    // If no saved theme, default to 'dark'
+    return 'dark';
   });
 
   useEffect(() => {
