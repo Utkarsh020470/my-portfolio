@@ -5,30 +5,9 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/my-portfolio/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
-  },
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    rollupOptions: {
-      output: {
-        format: 'es',
-        entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].js',
-        assetFileNames: 'assets/[name].[ext]',
-      },
-    },
-  },
-  server: {
-    headers: {
-      'Content-Type': 'application/javascript',
-    },
-  },
-  optimizeDeps: {
-    include: ['react', 'react-dom'],
   },
 });
