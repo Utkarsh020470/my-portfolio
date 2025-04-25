@@ -35,6 +35,7 @@ import {
   GitFork,
   CircuitBoard,
   Settings,
+  Send,
   Laptop,
   Cog,
   Folder,
