@@ -15,5 +15,23 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          ui: [
+            '@radix-ui/react-slot',
+            'class-variance-authority',
+            'clsx',
+            'tailwind-merge',
+          ],
+          animations: ['framer-motion'],
+        },
+      },
+    },
+  },
+  server: {
+    port: 3000,
+    open: true,
   },
 });

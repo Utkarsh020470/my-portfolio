@@ -19,7 +19,7 @@ export default function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-gray-900 dark:to-gray-800 opacity-70"></div>
-        <div className="absolute inset-0 bg-[url('/assets/hero-bg.jpg')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-100/20 to-teal-100/20 dark:from-emerald-900/20 dark:to-teal-900/20"></div>
       </div>
 
       <div className="container mx-auto px-4 z-10">
