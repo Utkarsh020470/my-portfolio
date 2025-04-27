@@ -11,7 +11,7 @@ Welcome to the little corner of the internet where I show off my skills, project
 
 ## ✨ Why You'll Love It
 - Smooth, scroll-worthy animations
-- Crisp, responsive design (yes, it looks good on your phone too!)
+- Fast and intuitive navigation, super easy to explore with just a few clicks.
 - Lightning-fast loading times
 - Simple, clean, and easy to navigate
 
