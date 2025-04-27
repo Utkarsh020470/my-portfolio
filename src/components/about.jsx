@@ -50,7 +50,7 @@ export default function About() {
             >
               <div className="relative w-full max-w-[340px] mx-auto lg:w-[340px] rounded-2xl overflow-hidden">
                 <img
-                  src="public/profilePic.jpg"
+                  src="/profilePic.jpg"
                   alt="Utkarsh Saxena"
                   className="w-full h-auto rounded-2xl scale-[0.85] transform origin-center"
                 />
