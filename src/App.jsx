@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './components/ThemeProvider';
 import './App.css';
 import Navbar from './components/navbar';
@@ -33,20 +33,18 @@ function MainContent() {
 
 function App() {
   return (
-    <Router>
-      <ThemeProvider>
-        <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
-          <CursorEffect />
-          <ScrollProgress />
-          <AnimatedBackground />
-          <Routes>
-            <Route path="/" element={<MainContent />} />
-            <Route path="/demo-unavailable" element={<DemoUnavailable />} />
-            <Route path="/thank-you" element={<ThankYou />} />
-          </Routes>
-        </div>
-      </ThemeProvider>
-    </Router>
+    <ThemeProvider>
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+        <CursorEffect />
+        <ScrollProgress />
+        <AnimatedBackground />
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/demo-unavailable" element={<DemoUnavailable />} />
+          <Route path="/thank-you" element={<ThankYou />} />
+        </Routes>
+      </div>
+    </ThemeProvider>
   );
 }
 
